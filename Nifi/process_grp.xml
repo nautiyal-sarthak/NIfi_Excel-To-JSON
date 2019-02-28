@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>273fe874-0169-1000-6462-cbd975583cbe</groupId>
+    <name>Excel_Json_Working</name>
+    <snippet>
+        <connections>
+            <id>3ae9dd73-1f2d-3ccc-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>52475a4a-2266-3361-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>splits</selectedRelationships>
+            <source>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>3a99c5cf-c2e0-3df5-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>5e1db6e4-c2ae-3181-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>67deb0ae-873b-37d1-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>52475a4a-2266-3361-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>67470a18-78e0-36b7-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>6a29f6b7-d971-399d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>3a274efe-1526-3b3c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>6b0f4a76-be48-3055-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>3a99c5cf-c2e0-3df5-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>6b437c9c-ca14-34a6-0000-000000000000</groupId>
+                <id>6a29f6b7-d971-399d-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <processors>
+            <id>3a274efe-1526-3b3c-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>1.1052805090570814</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Input Directory</key>
+                        <value>
+                            <name>Input Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>File Filter</key>
+                        <value>
+                            <name>File Filter</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Filter</key>
+                        <value>
+                            <name>Path Filter</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Keep Source File</key>
+                        <value>
+                            <name>Keep Source File</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Recurse Subdirectories</key>
+                        <value>
+                            <name>Recurse Subdirectories</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Polling Interval</key>
+                        <value>
+                            <name>Polling Interval</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Ignore Hidden Files</key>
+                        <value>
+                            <name>Ignore Hidden Files</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Age</key>
+                        <value>
+                            <name>Minimum File Age</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Age</key>
+                        <value>
+                            <name>Maximum File Age</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Size</key>
+                        <value>
+                            <name>Minimum File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Size</key>
+                        <value>
+                            <name>Maximum File Size</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Input Directory</key>
+                        <value>C:\Users\js648kp\Desktop\work\GE\EXCEL_READER\sample_file\nifi_in</value>
+                    </entry>
+                    <entry>
+                        <key>File Filter</key>
+                        <value>[^\.].*</value>
+                    </entry>
+                    <entry>
+                        <key>Path Filter</key>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Keep Source File</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Recurse Subdirectories</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Polling Interval</key>
+                        <value>0 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Ignore Hidden Files</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Age</key>
+                        <value>0 sec</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Age</key>
+                    </entry>
+                    <entry>
+                        <key>Minimum File Size</key>
+                        <value>0 B</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Size</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GetFile</type>
+        </processors>
+        <processors>
+            <id>3a99c5cf-c2e0-3df5-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <position>
+                <x>628.8851047486744</x>
+                <y>190.26292272946426</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Line Split Count</key>
+                        <value>
+                            <name>Line Split Count</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Fragment Size</key>
+                        <value>
+                            <name>Maximum Fragment Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Header Line Count</key>
+                        <value>
+                            <name>Header Line Count</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Header Line Marker Characters</key>
+                        <value>
+                            <name>Header Line Marker Characters</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Remove Trailing Newlines</key>
+                        <value>
+                            <name>Remove Trailing Newlines</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Line Split Count</key>
+                        <value>18</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum Fragment Size</key>
+                    </entry>
+                    <entry>
+                        <key>Header Line Count</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>Header Line Marker Characters</key>
+                    </entry>
+                    <entry>
+                        <key>Remove Trailing Newlines</key>
+                        <value>true</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>SplitText</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>splits</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.SplitText</type>
+        </processors>
+        <processors>
+            <id>52475a4a-2266-3361-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <position>
+                <x>632.6068305969238</x>
+                <y>381.3447545122603</y>
+            </position>
+            <bundle>
+                <artifact>nifi-scripting-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Script Engine</key>
+                        <value>
+                            <name>Script Engine</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Script File</key>
+                        <value>
+                            <name>Script File</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Script Body</key>
+                        <value>
+                            <name>Script Body</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Module Directory</key>
+                        <value>
+                            <name>Module Directory</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Script Engine</key>
+                        <value>python</value>
+                    </entry>
+                    <entry>
+                        <key>Script File</key>
+                    </entry>
+                    <entry>
+                        <key>Script Body</key>
+                        <value>import json
+import java.io
+import csv
+from org.apache.commons.io import IOUtils
+from java.nio.charset import StandardCharsets
+from org.apache.nifi.processor.io import StreamCallback
+ 
+class Table(object):
+    def __init__(self):
+        self._csm = None
+
+    def __init__(self):
+        self._risk = None
+
+    def __init__(self):
+        self._experience = None
+
+    def __init__(self):
+        self._contracts = None
+
+    def __init__(self):
+        self._changes_in_estimates_reflected_in_csm = None
+
+    def __init__(self):
+        self._changes_in_estimates_resulting_in_onerous_contract_losses = None
+
+    def __init__(self):
+        self._adjustments = None
+
+    def __init__(self):
+        self._insurance_finance_expenses = None
+
+    def __init__(self):
+        self._movements_in_exchange_rates = None
+
+    def __init__(self):
+        self._cashflows = None
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=True, indent=4)
+
+    @property
+    def csm(self):
+        return self._csm
+
+    @csm.setter
+    def csm(self, value):
+        self._csm = value
+
+    @property
+    def risk(self):
+        return self._risk
+
+    @risk.setter
+    def risk(self, value):
+        self._risk = value
+
+    @property
+    def experience(self):
+        return self._experience
+
+    @experience.setter
+    def experience(self, value):
+        self._experience = value
+
+    @property
+    def contracts(self):
+        return self._contracts
+
+    @contracts.setter
+    def contracts(self, value):
+        self._contracts = value
+
+    @property
+    def changes_in_estimates_reflected_in_csm(self):
+        return self._changes_in_estimates_reflected_in_csm
+
+    @changes_in_estimates_reflected_in_csm.setter
+    def changes_in_estimates_reflected_in_csm(self, value):
+        self._changes_in_estimates_reflected_in_csm = value
+
+    @property
+    def changes_in_estimates_resulting_in_onerous_contract_losses(self):
+        return self._changes_in_estimates_resulting_in_onerous_contract_losses
+
+    @changes_in_estimates_resulting_in_onerous_contract_losses.setter
+    def changes_in_estimates_resulting_in_onerous_contract_losses(self, value):
+        self._changes_in_estimates_resulting_in_onerous_contract_losses = value
+
+    @property
+    def adjustments(self):
+        return self._adjustments
+
+    @adjustments.setter
+    def adjustments(self, value):
+        self._adjustments = value
+
+    @property
+    def insurance_finance_expenses(self):
+        return self._insurance_finance_expenses
+
+    @insurance_finance_expenses.setter
+    def insurance_finance_expenses(self, value):
+        self._insurance_finance_expenses = value
+
+
+    @property
+    def movements_in_exchange_rates(self):
+        return self._movements_in_exchange_rates
+
+    @movements_in_exchange_rates.setter
+    def movements_in_exchange_rates(self, value):
+        self._movements_in_exchange_rates = value
+
+    @property
+    def cashflows(self):
+        return self._cashflows
+
+    @cashflows.setter
+    def cashflows(self, value):
+        self._cashflows = value
+
+class Report(object):
+    def __init__(self):
+        self._epv_cashflows = None
+
+    def __init__(self):
+        self._risk_adj = None
+
+    def __init__(self):
+        self._csm = None
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__,
+                          sort_keys=True, indent=4)
+
+    @property
+    def epv_cashflows(self):
+        return self._epv_cashflows
+
+    @epv_cashflows.setter
+    def epv_cashflows(self, value):
+        self._epv_cashflows = value
+
+    @property
+    def risk_adj(self):
+        return self._risk_adj
+
+    @risk_adj.setter
+    def risk_adj(self, value):
+        self._risk_adj = value
+
+    @property
+    def csm(self):
+        return self._csm
+
+    @csm.setter
+    def csm(self, value):
+        self._csm = value
+
+ 
+ 
+class ModJSON(StreamCallback):
+	def __init__(self):
+		pass
+  
+	def process(self, inputStream, outputStream):
+		intext = IOUtils.toString(inputStream, StandardCharsets.UTF_8)
+		lines = intext.split("\n")
+		data = ([row.split(",") for row in lines])
+		
+		
+		EPV_Cashflows = Table()
+		Risk_Adj = Table()
+		csm = Table()
+		rpt = Report()
+		
+		for i in range(len(data)):
+			if len(data[i]) &gt;= 5:
+				if  "CSM recognised for services provided" in data[i][0] :
+					EPV_Cashflows.csm = checkBlank(data[i][1])
+					Risk_Adj.csm = checkBlank(data[i][2])
+					csm.csm = checkBlank(data[i][3])
+
+				if  "Risk adjustment recognised for the risk expired" in data[i][0] :
+					EPV_Cashflows.risk = checkBlank(data[i][1])
+					Risk_Adj.risk = checkBlank(data[i][2])
+					csm.risk = checkBlank(data[i][3])
+
+				if  "Experience adjustments" in data[i][0] :
+					EPV_Cashflows.experience = checkBlank(data[i][1])
+					Risk_Adj.experience = checkBlank(data[i][2])
+					csm.experience = checkBlank(data[i][3])
+
+				if  "Contracts initially recognised in the period" in data[i][0] :
+					EPV_Cashflows.contracts = checkBlank(data[i][1])
+					Risk_Adj.contracts = checkBlank(data[i][2])
+					csm.contracts = checkBlank(data[i][3])
+
+
+				if  "Changes in estimates reflected in CSM" in data[i][0] :
+					EPV_Cashflows.changes_in_estimates_reflected_in_csm = checkBlank(data[i][1])
+					Risk_Adj.changes_in_estimates_reflected_in_csm = checkBlank(data[i][2])
+					csm.changes_in_estimates_reflected_in_csm = checkBlank(data[i][3])
+
+				if  "Changes in estimates resulting in onerous contract losses" in data[i][0] :
+					EPV_Cashflows.changes_in_estimates_resulting_in_onerous_contract_losses = checkBlank(data[i][1])
+					Risk_Adj.changes_in_estimates_resulting_in_onerous_contract_losses = checkBlank(data[i][2])
+					csm.changes_in_estimates_resulting_in_onerous_contract_losses = checkBlank(data[i][3])
+
+				if  "Adjustments to liabilities for incurred claims" in data[i][0] :
+					EPV_Cashflows.adjustments = checkBlank(data[i][1])
+					Risk_Adj.adjustments = checkBlank(data[i][2])
+					csm.adjustments = checkBlank(data[i][3])
+
+				if "Insurance finance expenses" in data[i][0]:
+					EPV_Cashflows.insurance_finance_expenses = checkBlank(data[i][1])
+					Risk_Adj.insurance_finance_expenses = checkBlank(data[i][2])
+					csm.insurance_finance_expenses = checkBlank(data[i][3])
+
+				if "Effect of movements in exchange rates" in data[i][0]:
+					EPV_Cashflows.movements_in_exchange_rates = checkBlank(data[i][1])
+					Risk_Adj.movements_in_exchange_rates = checkBlank(data[i][2])
+					csm.movements_in_exchange_rates = checkBlank(data[i][3])
+
+				if "Cashflows" in data[i][0]:
+					EPV_Cashflows.cashflows = checkBlank(data[i][1])
+					Risk_Adj.cashflows = checkBlank(data[i][2])
+					csm.cashflows = checkBlank(data[i][3])
+
+					rpt.epv_cashflows = EPV_Cashflows
+					rpt.risk_adj = Risk_Adj
+					rpt.csm = csm
+					
+					break	
+		
+		output = """{
+    "_csm": {
+        "_adjustments": 0,
+        "_cashflows": 0,
+        "_changes_in_estimates_reflected_in_csm": -622.8840024795629,
+        "_changes_in_estimates_resulting_in_onerous_contract_losses": 0,
+        "_contracts": 395.29757283040817,
+        "_csm": -128.16285138965895,
+        "_experience": 0,
+        "_insurance_finance_expenses": 23.697304079488873,
+        "_movements_in_exchange_rates": 0.0,
+        "_risk": 0
+    },
+    "_epv_cashflows": {
+        "_adjustments": 749.0134177762534,
+        "_cashflows": 0,
+        "_changes_in_estimates_reflected_in_csm": 486.5105401287813,
+        "_changes_in_estimates_resulting_in_onerous_contract_losses": 393.35968892909176,
+        "_contracts": -712.1782429668694,
+        "_csm": 0,
+        "_experience": -40.0,
+        "_insurance_finance_expenses": -47.588865278818446,
+        "_movements_in_exchange_rates": 0.0,
+        "_risk": 0
+    },
+    "_risk_adj": {
+        "_adjustments": 224.56268355525071,
+        "_cashflows": 0,
+        "_changes_in_estimates_reflected_in_csm": 136.37346235078195,
+        "_changes_in_estimates_resulting_in_onerous_contract_losses": 78.67193778581846,
+        "_contracts": 316.8806701364613,
+        "_csm": 0,
+        "_experience": 0,
+        "_insurance_finance_expenses": 25.810380236266155,
+        "_movements_in_exchange_rates": 0.0,
+        "_risk": -354.76
+    }
+}"""
+		outputStream.write(rpt.toJSON().encode('utf-8'))
+
+
+def checkBlank(input_str):
+    try:
+        input_str = float(input_str)
+    except ValueError:
+        input_str = 0
+    return input_str
+
+
+flowFile = session.get()
+if (flowFile != None):
+	flowFile = session.write(flowFile, ModJSON())
+	flowFile = session.putAttribute(flowFile, "filename", flowFile.getAttribute('filename').split('.')[0]+'_translated.json')
+session.transfer(flowFile, REL_SUCCESS)
+session.commit()</value>
+                    </entry>
+                    <entry>
+                        <key>Module Directory</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ExecuteScript</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.script.ExecuteScript</type>
+        </processors>
+        <processors>
+            <id>67deb0ae-873b-37d1-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <position>
+                <x>1215.8559576589191</x>
+                <y>382.96389542523025</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Directory</key>
+                        <value>
+                            <name>Directory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>
+                            <name>Conflict Resolution Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Create Missing Directories</key>
+                        <value>
+                            <name>Create Missing Directories</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Count</key>
+                        <value>
+                            <name>Maximum File Count</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Last Modified Time</key>
+                        <value>
+                            <name>Last Modified Time</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Permissions</key>
+                        <value>
+                            <name>Permissions</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                        <value>
+                            <name>Owner</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Group</key>
+                        <value>
+                            <name>Group</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Directory</key>
+                        <value>C:\Users\js648kp\Desktop\work\GE\EXCEL_READER\sample_file\nifi_out</value>
+                    </entry>
+                    <entry>
+                        <key>Conflict Resolution Strategy</key>
+                        <value>fail</value>
+                    </entry>
+                    <entry>
+                        <key>Create Missing Directories</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Maximum File Count</key>
+                    </entry>
+                    <entry>
+                        <key>Last Modified Time</key>
+                    </entry>
+                    <entry>
+                        <key>Permissions</key>
+                    </entry>
+                    <entry>
+                        <key>Owner</key>
+                    </entry>
+                    <entry>
+                        <key>Group</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutFile</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.PutFile</type>
+        </processors>
+        <processors>
+            <id>6a29f6b7-d971-399d-0000-000000000000</id>
+            <parentGroupId>6b437c9c-ca14-34a6-0000-000000000000</parentGroupId>
+            <position>
+                <x>627.1182966111805</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-poi-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.9.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>extract-sheets</key>
+                        <value>
+                            <name>extract-sheets</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>excel-extract-first-row</key>
+                        <value>
+                            <name>excel-extract-first-row</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>excel-extract-column-to-skip</key>
+                        <value>
+                            <name>excel-extract-column-to-skip</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>excel-format-values</key>
+                        <value>
+                            <name>excel-format-values</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>CSV Format</key>
+                        <value>
+                            <name>CSV Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Value Separator</key>
+                        <value>
+                            <name>Value Separator</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Include Header Line</key>
+                        <value>
+                            <name>Include Header Line</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Quote Character</key>
+                        <value>
+                            <name>Quote Character</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Escape Character</key>
+                        <value>
+                            <name>Escape Character</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Comment Marker</key>
+                        <value>
+                            <name>Comment Marker</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null String</key>
+                        <value>
+                            <name>Null String</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Trim Fields</key>
+                        <value>
+                            <name>Trim Fields</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Quote Mode</key>
+                        <value>
+                            <name>Quote Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Record Separator</key>
+                        <value>
+                            <name>Record Separator</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Include Trailing Delimiter</key>
+                        <value>
+                            <name>Include Trailing Delimiter</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>extract-sheets</key>
+                    </entry>
+                    <entry>
+                        <key>excel-extract-first-row</key>
+                        <value>0</value>
+                    </entry>
+                    <entry>
+                        <key>excel-extract-column-to-skip</key>
+                    </entry>
+                    <entry>
+                        <key>excel-format-values</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>CSV Format</key>
+                        <value>excel</value>
+                    </entry>
+                    <entry>
+                        <key>Value Separator</key>
+                        <value>,</value>
+                    </entry>
+                    <entry>
+                        <key>Include Header Line</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Quote Character</key>
+                        <value>"</value>
+                    </entry>
+                    <entry>
+                        <key>Escape Character</key>
+                        <value>\</value>
+                    </entry>
+                    <entry>
+                        <key>Comment Marker</key>
+                    </entry>
+                    <entry>
+                        <key>Null String</key>
+                    </entry>
+                    <entry>
+                        <key>Trim Fields</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>Quote Mode</key>
+                        <value>NONE</value>
+                    </entry>
+                    <entry>
+                        <key>Record Separator</key>
+                        <value>\n</value>
+                    </entry>
+                    <entry>
+                        <key>Include Trailing Delimiter</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>ConvertExcelToCSVProcessor</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.poi.ConvertExcelToCSVProcessor</type>
+        </processors>
+    </snippet>
+    <timestamp>02/27/2019 10:42:55 SGT</timestamp>
+</template>
